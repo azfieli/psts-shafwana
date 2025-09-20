@@ -1,70 +1,44 @@
 # psts-shafwana
 
-CRUD Data Siswa - Penilaian Tengah Semester
-Project CRUD (Create, Read, Update, Delete) untuk mengelola data siswa sebagai bagian dari penilaian tengah semester Student Day Programming Web.
+# CRUD Data Siswa (Penilaian Tengah Semester)
 
-📋 Spesifikasi
-Tabel students memiliki field/kolom berikut:
+Proyek ini dibuat sebagai **Penilaian Tengah Semester (PTS) Student Day Programming Web**.  
+Aplikasi ini adalah sistem sederhana untuk mengelola **data siswa** menggunakan PHP & MySQL.
 
-id (primary key, auto increment)
+---
 
-nama - VARCHAR(100)
+## Apa itu CRUD?
+CRUD adalah singkatan dari **Create, Read, Update, Delete**, yaitu operasi dasar yang biasanya ada dalam aplikasi yang berhubungan dengan database:
 
-gender - ENUM('L', 'P')
+1. **Create (Tambah)** → menambahkan data baru ke database.  
+2. **Read (Baca)** → menampilkan atau membaca data dari database.  
+3. **Update (Edit)** → mengubah data yang sudah ada.  
+4. **Delete (Hapus)** → menghapus data dari database.  
 
-tanggal_lahir - DATE
+Di proyek ini, operasi CRUD diterapkan pada tabel `students`.
 
-created_at - TIMESTAMP
+---
 
-updated_at - TIMESTAMP
+## Fitur
+- Tambah data siswa (nama, jenis kelamin, tanggal lahir, kelas).  
+- Menampilkan data dalam bentuk tabel.  
+- Edit data siswa.  
+- Hapus data siswa.  
 
+---
 
-🛠️ Teknologi yang Digunakan
-PHP Native
+## Struktur Database
+Tabel `students` memiliki kolom:
+- `id` (INT, Primary Key, Auto Increment)  
+- `name` (VARCHAR)  
+- `gender` (ENUM: 'Laki-laki', 'Perempuan')  
+- `birth_date` (DATE)  
+- `kelas` (VARCHAR)  
 
-MySQL Database
+---
 
-HTML, CSS, JavaScript
-
-Bootstrap 5
-
-PDO (PHP Data Objects)
-
-
-✨ Fitur-fitur
-Create - Menambah data siswa baru
-
-Read - Menampilkan data siswa
-
-Update - Mengedit data siswa
-
-Delete - Menghapus data siswa
-
-Validasi form input
-
-Tampilan responsif dengan Bootstrap
-
-Konfirmasi sebelum menghapus data
-
-Feedback pesan sukses/error
-
-Perhitungan usia otomatis
-
-
-🎨 Tampilan
-Design modern dengan gradient colors
-
-Responsive layout untuk semua perangkat
-
-User-friendly interface dengan alert dan konfirmasi
-
-Table design yang rapi dan informatif
-
-📝Cara Penggunaan
-Lihat Data Siswa - Buka halaman utama untuk melihat semua data
-
-Tambah Data - Klik "Tambah Siswa" dan isi form
-
-Edit Data - Klik tombol "Edit" pada data yang ingin diubah
-
-Hapus Data - Klik tombol "Hapus" dan konfirmasi penghapusan
+## Cara Menjalankan
+1. Import file `crud_siswa.sql` ke database MySQL melalui **phpMyAdmin** atau jalankan `install.php`.  
+2. Jalankan XAMPP (Apache & MySQL).  
+3. Simpan folder project ke `htdocs`.  
+4. Akses lewat browser:  
